@@ -1,11 +1,26 @@
 <template>
   <div id="app">
-    siemano fresh data visualisation
+    <h1>Pie chart</h1>
+    <PieChart />
+    <h1>Line chart</h1>
+    <LineChart />
+    <h1>Column chart</h1>
+    <ColumnChart />
   </div>
 </template>
 
 <script>
-export default {};
+import PieChart from '@/components/PieChart.vue';
+import LineChart from '@/components/LineChart.vue';
+import ColumnChart from '@/components/ColumnChart.vue';
+
+export default {
+  components: {
+    PieChart,
+    LineChart,
+    ColumnChart
+  }
+};
 </script>
 
 <style lang="scss">
